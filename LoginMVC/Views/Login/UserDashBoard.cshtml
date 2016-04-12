@@ -6,5 +6,7 @@
     <legend> User DashBoard </legend>
     @if(Session["UserName"]!= null){
         <text>Welcome @Session["UserName"].ToString()</text>
+    <p>@Html.ActionLink("退出系统", "SignOut", "Login")</p>
     }
+   
 </fieldset>  
